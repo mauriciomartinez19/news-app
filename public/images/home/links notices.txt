@@ -1,0 +1,27 @@
+image: justice
+title: Why climate change is inherently racist
+https://www.bbc.com/future/article/20220125-why-climate-change-is-inherently-racist
+
+image: quantum
+title: What is the quantum apocalypse and should we be scared?
+https://www.bbc.com/news/technology-60144498
+
+image: olimpic
+title: 25 athletes to watch in the Beijing Winter Olympics
+https://edition.cnn.com/2022/01/26/sport/gallery/winter-olympic-athletes-to-watch-beijing/index.html
+
+image: train
+title:Flying without wings: The world's fastest trains
+https://edition.cnn.com/travel/article/worlds-fastest-trains-cmd/index.html
+
+image: dad-kid
+title: Dad's pandemic poem captures the highs and lows of quarantine scare
+https://abcnews.go.com/GMA/Family/dads-pandemic-poem-captures-highs-lows-quarantine-scare/story?id=82483189
+
+image: singer
+title: Mary J. Blige on why 'Family Affair' is the perfect song for the Super Bowl halftime show
+https://abcnews.go.com/GMA/Culture/mary-blige-family-affair-perfect-song-super-bowl/story?id=82508833
+
+image: china-demands
+title:China demands US halt Olympics 'interference'
+https://abcnews.go.com/Sports/wireStory/china-demands-us-halt-olympics-interference-82504170

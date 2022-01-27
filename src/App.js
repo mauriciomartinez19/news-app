@@ -1,7 +1,9 @@
+import Home from "./home";
+
 
 function App() {
   return (
-    <h1>hola mundo</h1>
+    <Home />
   );
 }
 
