@@ -1,0 +1,35 @@
+image: train
+title:Flying without wings: The world's fastest trains
+https://edition.cnn.com/travel/article/worlds-fastest-trains-cmd/index.html
+
+image: eu-bank
+title: EU bank may refrain from calling gas, nuclear projects green
+https://www.luxtimes.lu/en/european-union/eu-bank-may-refrain-from-calling-gas-nuclear-projects-green-61f2b8a8de135b92367cf19d
+
+image: luxembourg-hones
+title: Luxembourg hones in on lawyer entry exam requirement
+https://www.luxtimes.lu/en/luxembourg/luxembourg-hones-in-on-lawyer-entry-exam-requirement-61f27a0ede135b9236e93892
+
+image: pfizer
+title: Pfizer gets EU regulator's nod for oral Covid drug
+subtitle:European Medicines Agency recommends use of at-home treatment Paxlovid
+https://www.luxtimes.lu/en/european-union/pfizer-gets-eu-regulator-s-nod-for-oral-covid-drug-61f2ddf0de135b9236e714c4
+
+image: builders scramble
+title: Builders scramble for space to dump construction rubble
+subtitle:Lack of landfill capacity likely to lead to work being halted, putting projects at risk, warns
+https://www.luxtimes.lu/en/luxembourg/builders-scramble-for-space-to-dump-construction-rubble-61f12d6fde135b9236f4beea
+
+image: lufthansa-bans
+title: Lufthansa bans freight through Frankfurt hub due to omicron
+subtitle:Move shuts down cargo hub for one of the world’s biggest air-freight companies
+https://www.luxtimes.lu/en/business-finance/lufthansa-bans-freight-through-frankfurt-hub-due-to-omicron-61f18c8ede135b9236f8c22d
+
+image: cue-the-music
+title:New Cue the music: former Q editors join newsletter publishing boom
+subtitle:After the Bauer Media music title’s pandemic-triggered demise last July, Q’s former staff are launching a weekly direct-to-inbox publication
+https://www.theguardian.com/music/2021/feb/25/new-cue-former-q-editors-join-newsletter-publishing-boom
+
+image: america-news-deserts
+title:America's 'news deserts': the death of the great alt-weeklies
+https://www.theguardian.com/cities/2017/aug/23/america-alt-weeklies-baltimore-city-paper-village-voice

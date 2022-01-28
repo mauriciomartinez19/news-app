@@ -10,10 +10,6 @@ image: olimpic
 title: 25 athletes to watch in the Beijing Winter Olympics
 https://edition.cnn.com/2022/01/26/sport/gallery/winter-olympic-athletes-to-watch-beijing/index.html
 
-image: train
-title:Flying without wings: The world's fastest trains
-https://edition.cnn.com/travel/article/worlds-fastest-trains-cmd/index.html
-
 image: dad-kid
 title: Dad's pandemic poem captures the highs and lows of quarantine scare
 https://abcnews.go.com/GMA/Family/dads-pandemic-poem-captures-highs-lows-quarantine-scare/story?id=82483189

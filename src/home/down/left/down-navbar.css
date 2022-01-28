@@ -1,0 +1,26 @@
+.down-navbar-box{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid 2px #d70000;
+}
+
+.down-navbar-box-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-family: unset;
+}
+
+.down-navbar-box-title:hover{
+    background-color: #d70000;
+    color: white;
+    cursor: pointer;
+}
