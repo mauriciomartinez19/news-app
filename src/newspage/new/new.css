@@ -1,0 +1,30 @@
+.New-page{
+    width: 65vw;
+    min-height: 60vh;
+    padding: 5vw;
+    background-color: violet;
+}
+
+.new-page-title{
+    margin-top: 0.67em;
+    font-family: auto;
+    font-size: 3em;
+    color: #262626;
+}
+
+.new-page-line{
+    border-top: solid grey 2px;
+}
+
+.new-page-img-box{
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-page-img{
+    width: 100%;
+    object-fit: cover;
+}
