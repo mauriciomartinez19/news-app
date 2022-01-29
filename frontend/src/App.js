@@ -5,6 +5,8 @@ import Home from "./home";
 import TopNavBar from "./topnavbar/topNav";
 import NewsPage from './newspage';
 
+import Create from './create-new';
+
 
 function App() {
   return <Router>
@@ -12,6 +14,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/news" element={<NewsPage />} />
+      <Route path="/create" element={<Create />} />
     </Routes>
   </Router>;
 }

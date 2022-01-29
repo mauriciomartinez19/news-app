@@ -1,0 +1,25 @@
+.create-page{
+    padding-top: 50px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 30px;
+}
+
+.create-box-input{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.subtitle{
+    height: 100px;
+}
+
+.content{
+    height: 400px;
+}
