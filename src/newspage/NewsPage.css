@@ -1,9 +1,13 @@
 .NewsPage-box{
-    width: 100vw;
+    max-width: 100vw;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding-top: 50px;
+    justify-content: flex-start;
+}
+
+.News-page-zone{
     display: flex;
-    align-items: center;
+    flex-direction: row;
 }

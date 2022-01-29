@@ -1,15 +1,18 @@
 .New-page{
-    width: 65vw;
+    margin-left: 5vw;
+    width: 60vw;
     min-height: 60vh;
-    padding: 5vw;
-    background-color: violet;
+    padding: 2vw 5vw;
 }
 
 .new-page-title{
-    margin-top: 0.67em;
     font-family: auto;
     font-size: 3em;
     color: #262626;
+}
+
+.new-page-subtitle{
+
 }
 
 .new-page-line{
@@ -20,11 +23,26 @@
     margin-top: 2em;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.new-page-text{
+    font-family: auto;
+    font-size: 1.05em;
+    line-height: 1.4em;
+    margin-top: 2em;
 }
 
 .new-page-img{
     width: 100%;
     object-fit: cover;
 }
+
+.new-page-img-footer{
+    font-size: 0.9em;
+    color: grey;
+    font-style: italic;
+}
+
