@@ -13,7 +13,7 @@ function App() {
     <TopNavBar />
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/news" element={<NewsPage />} />
+      <Route path="/news/:id" element={<NewsPage />} />
       <Route path="/create" element={<Create />} />
     </Routes>
   </Router>;

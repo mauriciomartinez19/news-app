@@ -1,14 +1,14 @@
 import './down-navbar.css'
 
-const DownNavbar = () => {
+const DownNavbar = ({ handleClick }) => {
     return <>
         <div className='down-navbar-box'>
-            <h4 className='down-navbar-box-title'>Top</h4>
-            <h4 className='down-navbar-box-title'>Bussines</h4>
-            <h4 className='down-navbar-box-title'>Show</h4>
-            <h4 className='down-navbar-box-title'>Sports</h4>
-            <h4 className='down-navbar-box-title'>Tecnology</h4>
-            <h4 className='down-navbar-box-title'>Health</h4>
+            <button className='down-navbar-box-title' value='general' onClick={e => handleClick(e)}>Top</button>
+            <button className='down-navbar-box-title' value='bussines' onClick={e => handleClick(e)}>Bussines</button>
+            <button className='down-navbar-box-title' value='show' onClick={e => handleClick(e)}>Show</button>
+            <button className='down-navbar-box-title' value='sports' onClick={e => handleClick(e)}>Sports</button>
+            <button className='down-navbar-box-title' value='technology' onClick={e => handleClick(e)}>Technology</button>
+            <button className='down-navbar-box-title' value='health' onClick={e => handleClick(e)}>Health</button>
         </div>
     </>
 }

@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react'
+import { useParams } from 'react-router-dom'
+
 import './NewsPage.css'
 
 //Pages
@@ -7,9 +9,9 @@ import RightBanner from './rightbanner/rightban'
 
 
 
-const id = '61f5b7bd0530758773ea9f05'
-
 const NewsPage = () => {
+
+    const { id } = useParams()
 
     const [news, setNews] = useState({})
     const [content, setContent] = useState([])
@@ -25,7 +27,7 @@ const NewsPage = () => {
 
     const getLatest = async () => {
         const num = 5
-        const response = await fetch('http://localhost:5000/api/news/lastest/' + num)
+        const response = await fetch('http://localhost:5000/api/news/oldest/' + num)
         const data = await response.json()
         const top = data.shift()
         setTop(top)

@@ -82,6 +82,7 @@
     display: inline-block;
     overflow-wrap: break-word;
     word-wrap: break-word;
+    text-decoration: none;
 }
 
 .title-notice-center-bottom{
@@ -92,4 +93,5 @@
     display: inline-block;
     overflow-wrap: break-word;
     word-wrap: break-word;
+    text-decoration: none;
 }

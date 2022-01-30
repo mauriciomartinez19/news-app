@@ -17,6 +17,9 @@
     height: 100%;
     width: 100%;
     font-family: unset;
+    background-color: transparent;
+    border: none;
+    font-size: 1.1em;
 }
 
 .down-navbar-box-title:hover{
