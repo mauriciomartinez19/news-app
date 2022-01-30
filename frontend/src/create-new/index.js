@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './create.css'
 import { handleFileUpload } from './handleFileUpload'
 
-const url = ''
+const url = 'http://localhost:5000/api/news/create'
 
 const Create = () => {
     const [title, setTitle] = useState('')
@@ -61,6 +61,7 @@ const Create = () => {
                 <label>date</label>
                 <input
                     placeholder="date"
+                    type='date'
                     onChange={e => setDate(e.target.value)}></input>
             </div>
             <div className="create-box-input">
@@ -101,6 +102,7 @@ const Create = () => {
             <div className="create-box-input">
                 <label>tag</label>
                 <select name='tag' id='tag' onChange={e => setTag(e.target.value)}>
+                    <option value="general">General</option>
                     <option value="bussines">Bussines</option>
                     <option value="show">Show</option>
                     <option value="sports">Sports</option>

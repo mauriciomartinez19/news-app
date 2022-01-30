@@ -9,9 +9,16 @@ const users = {
 
 const New = require('../database/models/news')
 
-router.route('/').get(async (req, res) => {
-    const news = await New.find().sort({ _id: -1 }).limit(5)
-    res.status(200).json(news)
+router.route('/lastest/:num').get(async (req, res) => {
+    try {
+        const { num } = req.params
+        const news = await New.find().sort({ _id: -1 }).limit(num)
+        res.status(200).json(news)
+    } catch (error) {
+        console.log(error)
+        res.json(error)
+    }
+
 })
 
 router.route('/:id').get(async (req, res) => {
