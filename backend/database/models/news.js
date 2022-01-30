@@ -7,11 +7,10 @@ const New = new Schema({
     resume: { type: String, required: true },
     date: { type: String, required: true },
     author: { type: String, required: true },
-    img: { type: String, required: true },
+    image: { type: String, required: true },
     imgFooter: { type: String, required: true },
     content: { type: Array, required: true },
-    tag: { type: String, required: true },
-    number: { type: String, required: true }
+    tag: { type: String, required: true }
 });
 
 module.exports = mongoose.model('New', New);
