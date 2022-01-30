@@ -5,7 +5,9 @@ const TopNavBar = () => {
         <div className='top-navbar-box'>
             <img className='logo-navbar' src='./images/navbar/logotype.png' />
             <div className='navbar-title-box'>
-                <h2 className='navbar-title'>NEWS</h2>
+                <a href='/' className='navbar-title-a-tag'>
+                    <h2 className='navbar-title'>NEWS</h2>
+                </a>
             </div>
         </div>
     </>

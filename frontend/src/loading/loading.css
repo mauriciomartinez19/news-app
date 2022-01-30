@@ -1,0 +1,27 @@
+.loading-page{
+    background: #933d3d;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-page-logo{
+    animation: loading 3s infinite  linear;
+}
+
+@keyframes loading{
+    0%{
+        filter: brightness(0.9) invert(.7) sepia(.5) hue-rotate(145deg) saturate(200%);
+        transform: rotate(0deg);
+    }
+    50%{
+        filter:brightness(60%) invert(84%) sepia(88%) hue-rotate(0deg) saturate(270%);
+        transform: rotate(180deg);}
+
+    100%{
+        filter:brightness(0.9) invert(.7) sepia(100%) hue-rotate(425deg) saturate(200%);   
+        transform: rotate(360deg);
+    }
+}

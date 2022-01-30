@@ -1,6 +1,6 @@
 import './new.css'
 
-const New = ({ news, content }) => {
+const New = ({ news }) => {
 
     return <>
         <div className='New-page'>
@@ -14,7 +14,7 @@ const New = ({ news, content }) => {
                 <img className='new-page-img' src={news.image} />
                 <p className='new-page-img-footer'>{news.imgFooter}</p>
             </div>
-            {content.map((paragraph, i) => {
+            {news.content.map((paragraph, i) => {
                 return <>
                     <p key={i} className='new-page-text'>{paragraph}</p>
                 </>

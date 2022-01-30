@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import './left.css'
 import DownNavbar from './down-navbar'
-import { data } from './data-left-list'
 
 const Left = () => {
     const [tag, setTag] = useState('general')
@@ -18,8 +17,6 @@ const Left = () => {
         const first = data.shift()
         setPrincipal(first)
         setList(data)
-        console.log(first)
-        console.log(data)
     }
 
     useEffect(() => {

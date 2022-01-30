@@ -29,4 +29,9 @@
     font-size: 1.8em;
     letter-spacing: 0.2em;
     color: white;
+    
+}
+
+.navbar-title-a-tag{
+text-decoration: none;
 }
