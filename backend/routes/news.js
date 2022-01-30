@@ -1,11 +1,5 @@
 const express = require('express')
-const { findById } = require('../database/models/news')
 const router = express.Router()
-
-const users = {
-    name: 'maruicio',
-    data: 'hola como andas'
-}
 
 const New = require('../database/models/news')
 

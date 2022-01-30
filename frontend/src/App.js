@@ -6,7 +6,7 @@ import TopNavBar from "./topnavbar/topNav";
 import NewsPage from './newspage';
 
 import Create from './create-new';
-
+import CreateUser from './login/create-user/create-user';
 
 function App() {
   return <Router>
@@ -15,6 +15,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/news/:id" element={<NewsPage />} />
       <Route path="/create" element={<Create />} />
+      <Route path="/create-user" element={<CreateUser />} />
     </Routes>
   </Router>;
 }

@@ -13,9 +13,11 @@ app.use(express.json())
 
 
 const news = require('./routes/news')
+const user = require('./routes/users')
 
 
 app.use('/api/news', news)
+app.use('/api/users', user)
 
 
 

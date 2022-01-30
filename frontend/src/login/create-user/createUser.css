@@ -1,0 +1,45 @@
+.create-user-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #933d3d;
+}
+
+.create-user-box{
+    width: 25vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e25e5e;
+    border: solid 2px #4e2121;
+    border-radius: 20px;
+}
+
+.create-user-box-title{
+    margin: 0;
+    font-size: 24px;
+}
+
+.create-user-input-box{
+    width: 80%;
+}
+
+.create-user-input{
+    width: 100%;
+}
+
+.create-user-btn{
+    width: 50%;
+    background-color:#933d3d ;
+    border: solid 2px #4e2121;
+    border-radius: 10px;
+    color: white;
+}
+
+.create-user-btn:hover{
+    cursor: pointer;
+}
