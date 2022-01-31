@@ -85,6 +85,7 @@
 
 .home-down-left-rigt-notice-title{
     margin: 0;
+    font-size: max(1.15vw, 13px);
 }
 
 .home-down-left-rigt-notice-date{

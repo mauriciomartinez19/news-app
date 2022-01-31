@@ -1,6 +1,7 @@
 .home-down-section{
-    width: 80vw;
+    width: 80%;
     height: 80vh;
+    min-height: 500px;
     gap: 25px;
     display: flex;
     flex-direction: row;
