@@ -93,6 +93,26 @@
     color: #fff;
     display: inline-block;
     overflow-wrap: break-word;
-    word-wrap: break-word;
     text-decoration: none;
+}
+
+@media (max-width:600px){
+    .central-background{
+        min-width: 0px;
+    }
+    .central-box{
+        height: 50vh;
+    }
+    .center-side{
+        width: 100%;
+    }
+    .left-notice{
+        display: none;
+    }
+    .right-side{
+        display: none;
+    }
+    .title-notice-center-bottom{
+        font-size: 0.8rem ;
+    }
 }

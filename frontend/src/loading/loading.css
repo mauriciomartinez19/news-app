@@ -8,6 +8,8 @@
 }
 
 .loading-page-logo{
+    max-height: 50%;
+    max-width: 50%;
     animation: loading 3s infinite  linear;
 }
 

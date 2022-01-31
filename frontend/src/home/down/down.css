@@ -6,3 +6,10 @@
     display: flex;
     flex-direction: row;
 }
+
+@media (max-width:600px){
+    .home-down-section{
+        flex-direction: column;
+        gap: 0px;
+    }
+}

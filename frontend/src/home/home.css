@@ -7,3 +7,10 @@
     width: 100vw;
     min-height: 100vh ;
 }
+
+@media (max-width:600px){
+    .back-whole-page{
+    min-width: 0px;
+    min-height: 0px;
+    }
+}

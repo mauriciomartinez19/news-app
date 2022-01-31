@@ -27,3 +27,56 @@
     color: white;
     cursor: pointer;
 }
+
+.button-navbar-box{
+    display: none;
+}
+
+.down-navbar-img{
+
+}
+
+@media(max-width:600px){
+    .down-navbar-box-title{
+        display: none;
+    }
+
+    .button-navbar-box{
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: column;
+        margin-right: 10px;
+        position: relative;
+    }
+
+    .down-navbar-img{
+        display: block;
+        width: 1.5em;
+        height: 1.5em;
+    }
+    
+    .down-navbar-select-box{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 1.5em;
+        background-color: white;
+    }
+    .down-navbar-box-title-list{
+    height: 100%;
+    width: 100%;
+    font-family: unset;
+    background-color: transparent;
+    border: none;
+    font-size: 1.1em;
+    }
+
+    .down-navbar-box-title-list:hover{
+    background-color: #d70000;
+    color: white;
+    cursor: pointer;
+    }
+
+}

@@ -63,6 +63,32 @@
 }
 
 .home-down-right-top-icon{
-    height: 50px;
-    width: 50px;
+    height: 4rem;
+    width: 4rem;
+}
+
+@media (max-width:600px){
+    .home-down-right{
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        height: 30%;
+    }
+    .home-down-right-bot{
+        width: 40%;
+    }
+    .home-down-right-top{
+        gap: 5px;
+        width: 40%;
+    }
+    .home-down-right-top-icon{
+        height: 2rem;
+        width: 2rem;
+    }
+    .top-navbar-box-title{
+    width: 100%;
+    }
+    .top-navbar-box-title{
+        font-size: 0.85em;
+    }
 }

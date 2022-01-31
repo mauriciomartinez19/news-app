@@ -46,3 +46,18 @@
     font-style: italic;
 }
 
+@media (max-width:600px){
+    .New-page{
+        width: 85vw;
+    }
+    .new-page-title{
+        font-size: 2em;
+    }
+    .new-page-subtitle{
+        font-size: 1em;
+}
+.new-page-date{
+    font-size: 0.7em;
+}
+}
+

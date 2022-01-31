@@ -6,7 +6,7 @@ const New = ({ news }) => {
         <div className='New-page'>
             <div className='new-page-box-title'>
                 <h1 className='new-page-title'> {news.title}</h1>
-                <h5>{news.date}</h5>
+                <h5 className='new-page-date'>{news.date}</h5>
             </div>
             <h3 className='new-page-subtitle'>{news.subtitle}</h3>
             <div className='new-page-line'></div>
