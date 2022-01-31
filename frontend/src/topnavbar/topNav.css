@@ -1,5 +1,7 @@
 .top-navbar-box{
     position: fixed;
+    display: flex;
+    justify-content: space-around;
     background-color: #d70000;
     height: 50px;
     width: 100vw;
@@ -8,9 +10,7 @@
 .logo-navbar{
     -webkit-filter: invert(100%);
     filter: invert(100%);
-    position: fixed;
     height: 50px;
-    margin-left: 20px;
 }
 
 .navbar-title-box{
@@ -31,4 +31,24 @@
 
 .navbar-title-a-tag{
 text-decoration: none;
+color: white;
+font-weight: bold;
+}
+
+@media (max-width:600px){
+    .top-navbar-box{
+        height: 30px;
+    }
+    .logo-navbar{
+        height: 30px;
+    }
+    .navbar-title-box{
+        height: 30px;
+    }
+    .navbar-title{
+        font-size: 1.2em;
+    }
+    .navbar-title-a-tag{
+        font-size: 0.8em;
+    }
 }

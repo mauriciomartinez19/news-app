@@ -9,6 +9,12 @@ const TopNavBar = () => {
                     <h2 className='navbar-title'>NEWS</h2>
                 </a>
             </div>
+            <div className='navbar-title-box'>
+                <a href='/login' className='navbar-title-a-tag'>
+                    Sign in
+                </a>
+            </div>
+
         </div>
     </>
 }
