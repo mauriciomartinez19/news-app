@@ -1,8 +1,9 @@
 const express = require('express')
 const router = express.Router()
+const jwt = require('jsonwebtoken')
 
 const User = require('../database/models/user')
-const hashPassword = require('./controllers/users-controllers')
+const { hashPassword, validation } = require('./controllers/users-controllers')
 
 router.route('/create-user').post(async (req, res) => {
     const { email, name, password } = req.body
@@ -29,6 +30,24 @@ router.route('/create-user').post(async (req, res) => {
     }
 
 
+})
+
+router.route('/login').post(async (req, res) => {
+    const { name, password } = req.body
+    console.log(req.body)
+    const { mes, user } = await validation(name, password)
+    if (user) {
+        const token = jwt.sign(
+            {
+                name: user[0].name,
+                email: user[0].email,
+                id: user[0]._id
+            },
+            'secret123',
+            { expiresIn: '6h' }
+        )
+        res.json({ status: mes, user: token })
+    } else res.json({ status: mes, user: false })
 })
 
 
