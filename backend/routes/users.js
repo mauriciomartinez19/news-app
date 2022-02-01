@@ -34,7 +34,6 @@ router.route('/create-user').post(async (req, res) => {
 
 router.route('/login').post(async (req, res) => {
     const { name, password } = req.body
-    console.log(req.body)
     const { mes, user } = await validation(name, password)
     if (user) {
         const token = jwt.sign(

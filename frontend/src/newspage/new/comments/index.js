@@ -1,6 +1,14 @@
+import { useState } from 'react'
 import './comments.css'
 
 const Comments = () => {
+
+    const [post, setPost] = useState('')
+
+    const handleSubmit = async () => {
+        const response = await fetch()
+    }
+
     return <>
         <div className='comments-box'>
             <div className='comments-padding-element'>
@@ -41,9 +49,9 @@ const Comments = () => {
                         <button className='unit-comment-button'>Reply</button>
                     </div>
                 </div>
-                <form className='comment-input-form'>
+                <form className='comment-input-form' onSubmit={handleSubmit}>
                     <label>Add new comment</label>
-                    <textarea className='comment-input' placeholder='insert your comment' />
+                    <textarea className='comment-input' placeholder='insert your comment' onChange={(e) => setPost(e.target.value)} />
                     <button className='comment-submit-btn'>Submit</button>
                 </form>
             </div>
