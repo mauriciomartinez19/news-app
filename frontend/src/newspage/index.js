@@ -7,6 +7,7 @@ import './NewsPage.css'
 import Loading from '../loading/loading'
 import New from './new/new'
 import RightBanner from './rightbanner/rightban'
+import Comments from './comments'
 
 
 

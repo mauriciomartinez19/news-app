@@ -1,3 +1,5 @@
+import Comments from '../comments'
+
 import './new.css'
 
 const New = ({ news }) => {
@@ -19,7 +21,7 @@ const New = ({ news }) => {
                     <p key={i} className='new-page-text'>{paragraph}</p>
                 </>
             })}
-
+            <Comments />
         </div>
     </>
 }
