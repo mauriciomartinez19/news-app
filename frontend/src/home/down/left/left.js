@@ -27,18 +27,16 @@ const Left = () => {
         <DownNavbar
             handleClick={handleClick} />
         <div className='home-down-left'>
-            <div className='home-down-left-left'>
+            <a href={`/news/${principal._id}`} className='home-down-left-left'>
                 <div className='home-down-left-left-box-img'>
-                    <a className='home-donwn-left-left-tag-a' href={`/news/${principal._id}`}>
-                        <img src={principal.image} className='home-down-left-left-img' />
-                    </a>
+                    <img src={principal.image} className='home-down-left-left-img' alt='top-general-notice' />
                 </div>
                 <div className='home-down-left-left-text'>
                     <h3 className='home-down-left-left-text-title'>{principal.title}</h3>
                     <p className='home-down-left-left-text-subtitle'>{principal.resume}</p>
                     <h6 className='home-down-left-left-text-date'>Date: {principal.date}</h6>
                 </div>
-            </div>
+            </a>
             <div className='home-down-left-rigt'>
                 {list.map(info => {
                     const { title, image, date, _id } = info
