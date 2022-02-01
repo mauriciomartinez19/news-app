@@ -24,7 +24,7 @@ const TopNavBar = () => {
 
     return <>
         <div className='top-navbar-box'>
-            <img className='logo-navbar' src='./images/navbar/logotype.png' alt='news-logo' />
+            <img className='logo-navbar' src={require('../assets/navbar/logotype.png')} alt='news-logo' />
             <div className='navbar-title-box'>
                 <a href='/' className='navbar-title-a-tag'>
                     <h2 className='navbar-title'>NEWS</h2>
