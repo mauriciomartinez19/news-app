@@ -15,10 +15,12 @@ const verifyToken = require('./routes/token/verify-controller')
 
 const news = require('./routes/news')
 const user = require('./routes/users')
+const comments = require('./routes/comments')
 const verify = require('./routes/token/verify-route')
 
 app.use('/api/news', news)
 app.use('/api/users', user)
+app.use('/api/comments', comments)
 //verify
 app.use('/api/verify', verifyToken, verify)
 

@@ -22,7 +22,6 @@ function App() {
       }
     })
     const data = await response.json()
-    console.log(data)
     if (data === 'the token is valid') {
       setIsAuthenticated(true)
     }
@@ -38,7 +37,7 @@ function App() {
     <TopNavBar />
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/news/:id" element={<NewsPage />} />
+      <Route path="/news/:id" element={<NewsPage isAunthenticated={isAunthenticated} />} />
       <Route path="/create" element={<Create />} />
       <Route path="/create-user" element={<CreateUser />} />
       <Route path="/login" element={<Login />} />

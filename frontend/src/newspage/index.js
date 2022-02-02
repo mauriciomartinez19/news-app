@@ -9,7 +9,7 @@ import New from './new/new'
 import RightBanner from './rightbanner/rightban'
 
 
-const NewsPage = () => {
+const NewsPage = ({ isAunthenticated }) => {
 
     const { id } = useParams()
 
@@ -37,9 +37,11 @@ const NewsPage = () => {
         {isLoading
             ? <Loading />
             : <div className="NewsPage-box">
-                <div className='News-page-zone'>
+                <div className='News-page-zone active'>
                     <New
-                        news={news} />
+                        news={news}
+                        isAunthenticated={isAunthenticated}
+                        id={id} />
                     <RightBanner
                         banner={banner} />
                 </div>
@@ -47,5 +49,6 @@ const NewsPage = () => {
 
     </>
 }
+
 
 export default NewsPage

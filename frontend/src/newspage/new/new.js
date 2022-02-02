@@ -2,7 +2,7 @@ import Comments from './comments'
 
 import './new.css'
 
-const New = ({ news }) => {
+const New = ({ news, isAunthenticated, id }) => {
 
     return <>
         <div className='New-page'>
@@ -21,7 +21,9 @@ const New = ({ news }) => {
                     <p key={i} className='new-page-text'>{paragraph}</p>
                 </>
             })}
-            <Comments />
+            <Comments
+                isAunthenticated={isAunthenticated}
+                id={id} />
         </div>
     </>
 }

@@ -7,7 +7,6 @@ const hashPassword = async (password, saltRounds) => {
 }
 
 const validation = async (userName, password) => {
-    console.log(userName)
     const exist = await User.find({ name: userName })
     if (exist.length) {
         const response = await bcrypt.compare(password, exist[0].hashPass)
