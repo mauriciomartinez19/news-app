@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import FormPage from '../FormPage'
 
 import './createUser.css'
 
@@ -24,36 +25,38 @@ const CreateUser = () => {
         console.log(data)
     }
 
-    return <>
-        <div className="create-user-page">
-            <form className='create-user-box' onSubmit={handleSubmit}>
-                <h3 className='create-user-box-title'>Create your User</h3>
-                <div className='create-user-input-box'>
-                    <label className='create-user-input-name'>Name</label>
-                    <input
-                        className='create-user-input'
-                        placeholder='insert your name'
-                        onChange={e => setName(e.target.value)}></input>
-                </div>
-                <div className='create-user-input-box'>
-                    <label className='create-user-input-name'>Email</label>
-                    <input
-                        className='create-user-input'
-                        placeholder='insert your email'
-                        type='email'
-                        onChange={e => setEmail(e.target.value)}></input>
-                </div>
-                <div className='create-user-input-box'>
-                    <label className='create-user-input-name'>Password</label>
-                    <input
-                        className='create-user-input'
-                        placeholder='insert your email'
-                        type='password'
-                        onChange={e => setPassword(e.target.value)}></input>
-                </div>
-                <button className='create-user-btn'>Create User</button>
-            </form>
-        </div>
-    </>
+    const formLabels =
+        [
+            {
+                formName: 'Name',
+                placeholder: 'insert your Name',
+                defaultValue: name,
+                handleChange: setName
+            },
+            {
+                formName: 'Email',
+                placeholder: 'inser your email',
+                defaultValue: email,
+                handleChange: setEmail,
+                type: 'email'
+            },
+            {
+                formName: 'Password',
+                placeholder: 'insert your Password',
+                defaultValue: password,
+                handleChange: setPassword,
+                type: 'password'
+            }
+
+        ]
+
+    return (
+        <FormPage
+            title='Create user'
+            handleSubmit={handleSubmit}
+            formLabels={formLabels}
+            buttonTitle='Create user'
+        />
+    )
 }
 export default CreateUser

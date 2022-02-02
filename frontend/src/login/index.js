@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import FormPage from "./FormPage"
 
 const Login = () => {
     const [name, setName] = useState('')
@@ -11,7 +11,6 @@ const Login = () => {
             name: name,
             password: password
         }
-        console.log(mes)
         const response = await fetch('http://localhost:5000/api/users/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -28,34 +27,42 @@ const Login = () => {
         setPassword('')
     }
 
-    return <>
-        <div className="create-user-page">
-            <div className='create-user-box'>
-                <form className="create-user-box-form" onSubmit={handleSubmit}>
-                    <h3 className='create-user-box-title'>Create your User</h3>
-                    <div className='create-user-input-box'>
-                        <label className='create-user-input-name'>Name</label>
-                        <input
-                            className='create-user-input'
-                            placeholder='insert your name'
-                            onChange={e => setName(e.target.value)}></input>
-                    </div>
-                    <div className='create-user-input-box'>
-                        <label className='create-user-input-name'>Password</label>
-                        <input
-                            className='create-user-input'
-                            placeholder='insert your email'
-                            type='password'
-                            onChange={e => setPassword(e.target.value)}></input>
-                    </div>
-                    <button className='create-user-btn'>Log in</button>
-                </form>
-                <a href="/create-user" className="create-new-user-btn-tag-a">
-                    <button className='create-new-user-btn'>Create new User</button>
-                </a>
-            </div>
-        </div>
-    </>
+    const formLabels =
+        [
+            {
+                formName: 'Name',
+                placeholder: 'insert your Name',
+                defaultValue: name,
+                handleChange: setName
+            },
+            {
+                formName: 'Password',
+                placeholder: 'insert your Password',
+                defaultValue: password,
+                handleChange: setPassword,
+                type: 'password'
+            }
+
+        ]
+
+    const secondButton =
+    {
+        href: "/create-user",
+        buttonName: 'Create new user'
+    }
+
+
+    return (
+        <FormPage
+            title='LogIn'
+            handleSubmit={handleSubmit}
+            formLabels={formLabels}
+            buttonTitle='Log in'
+            secondButton={secondButton}
+        />
+    )
 }
 
 export default Login
+
+

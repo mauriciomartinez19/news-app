@@ -73,4 +73,9 @@
     border: solid rgb(58, 158, 224) 1px;
     color: rgb(58, 158, 224);
     font-weight: bold;
+    width: 60px;
+}
+
+.comments-reply-box{
+    margin-left: 100px;
 }
